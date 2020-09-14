@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const rand = (min, max) => {
+            return min + Math.round((max-min)*Math.random());
+        }       
+        let count = 1;
+        let arr9 = [];
+        while(count<7){
+            let random = rand(1,38);
+            if(arr9.indexOf(random) == -1){
+                arr9.push(random)
+                count++;
+                document.write(random + '<br>')
+            }
+        }
+        document.write(rand(1,8))
+
+    </script>
+</body>
+</html>
